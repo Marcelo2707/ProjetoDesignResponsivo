@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link da folha de estilo -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FONT AWESOME - ICONES -->
+    <script src="https://kit.fontawesome.com/d65abf7a39.js" crossorigin="anonymous"></script>
+
+     <!-- Importação das fontes e icones via cdn-->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- FAV ICON -->
+    <link rel="shortcut icon" href="img/Fav.png">
+    <!-- Título do meu site -->
+    <!-- Importação da fonte -->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,700|Raleway:300,400,700" rel="stylesheet"> 
+    <title>Mobile First</title>
+</head>
+<body>
+    
+    <header class="cabecalho">
+        <h1 class="logo"><a href="index.html"> LOGO CURSO HTML</a></h1>
+        <button class="btn-menu"> <i class="fa fa-bars fa-lg"></i></button>
+        <nav class="menu">
+            <a class="btn-close"> <i class="fa fa-times"></i></a>    
+            <ul>
+                <li><a href="#html5">HTML5</a></li>
+                <li><a href="#">CSS3</a></li>
+                <li><a href="#">MATERIALIZE</a></li>
+                <li><a href="#">MOBILE FIRST</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="corpo">
+        <article class="sobre" id="html5">
+            <h2> HTML5 </h2>
+            <img src="img/html-p.jpg" alt="HTML5">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Cumque totam asperiores nemo. 
+                Id, fuga minima adipisci esse quia facilis, qui rem autem iusto, cumque ut ea ipsam exercitationem in illo.
+            </p>
+        </article>
+
+        <article class="sobre" id="css3">
+            <h2> CSS3 </h2>
+            <img src="img/css-p.jpg" alt="CSS3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Cumque totam asperiores nemo. 
+                Id, fuga minima adipisci esse quia facilis, qui rem autem iusto, cumque ut ea ipsam exercitationem in illo.
+            </p>
+        </article>
+
+        <article class="sobre" id="materialize">
+            <h2> Materialize </h2>
+            <img src="img/materialize-p.jpg" alt="Materialize">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Cumque totam asperiores nemo. 
+                Id, fuga minima adipisci esse quia facilis, qui rem autem iusto, cumque ut ea ipsam exercitationem in illo.
+            </p>
+        </article>
+
+        <article class="sobre" id="mobileFirst">
+            <h2> Mobile First </h2>
+            <img src="img/mobile-p.jpg" alt="Mobile First">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Cumque totam asperiores nemo. 
+                Id, fuga minima adipisci esse quia facilis, qui rem autem iusto, cumque ut ea ipsam exercitationem in illo.
+            </p>
+        </article>
+
+    </main>
+    <footer class="rodape">
+        <p>
+            &copy; Curso de Desenvolvimento Web - FATEC Bragança Paulista - Todos os direitos reservados<br>
+            Desenvolvido por Marcelo Nunes Cervantes
+        </p>
+
+    </footer>
+
+    <!-- Importação do Jquery -->   
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+		$(".btn-menu").click(function(){
+			$(".menu").show();
+		})
+		$(".btn-close").click(function(){
+			$(".menu").hide();
+		})
+		</script>
+</body>
+</html>

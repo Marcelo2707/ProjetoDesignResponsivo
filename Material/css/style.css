@@ -1,0 +1,157 @@
+/* RESET - COMPORTAMENTO INICIAL */
+*{ margin: 0; padding: 0; font-size: 100%;box-sizing: border-box; border:none; outline: none;}
+img{max-width: 100%;}
+ul{list-style: none;}
+a{text-decoration: none;}
+h2{font-size: 1.5em;color:#2c2c2c;}
+p{font-size: 1em; color: #2c2c2c;}
+
+/* ESTILIZAÇÃO DO CABEÇALHO*/
+.cabecalho{
+    width: 100%;
+    float: left;
+    padding: 3% 3% 3% 3%;
+    background-color: #2c2c2c;
+}
+
+.logo a{
+    width: 100px;
+    height: 42px;
+    float: left;
+    background: url(../img/Logo-P.png) no-repeat;
+    font-size: 0;
+}
+
+.btn-menu{
+    width: 45px;
+    height: 45px;
+    float: right;
+    text-align: center;
+    background-color: #161616;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* MENU */
+
+.menu{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgb(21, 21, 21);
+    top: 0;
+    left: 0;
+}
+
+.btn-close{
+    font-size: 2em; 
+    color: white; 
+    float: right; 
+    cursor: pointer; 
+    margin: 2% 3% 0 0;
+}
+
+.menu ul{
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.menu li{
+    padding: 3%;
+}
+
+.menu li a{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #b6b6b6;
+    padding: 1.5% 3%;
+}
+
+.menu li a:hover{
+    color: #fffcfc;
+    border: 1px solid #fffcfc;
+}
+
+/* CORPO DO SITE - CONTEUDO PRINCIPAL */
+
+.corpo{
+    width: 100%;
+    float: left;
+    padding: 3%;
+}
+
+.sobre{
+    width: 100%;
+    float: left;
+    padding: 3%;
+    background-color: #f1f1f1;
+    margin-bottom: 15px;
+}
+
+.sobre img{
+    width: 100%;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.sobre h2{
+    padding: 3% 0;
+}
+
+.sobre p{
+    text-align: justify;
+    padding: 3%;
+    color: black;
+}
+
+
+/* RODAPÉ */
+
+.rodape{
+    width: 100%;
+    float: left;
+    background-color: rgb(32, 32, 32);
+    padding: 20px 8%;
+}
+
+.rodape p{
+    color: white;
+    float: left;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+/* MEDIA TYPES */
+/* ----- MEDIUM DEVICES ----- */
+
+@media screen and (min-width: 700px){
+    .cabecalho{ padding: 5% 5% 5% 8%;}
+    .logo a{ width: 180px; height: 70px; background-color: url(../img/Logo-M.png) no-repeat; margin-left: 38%;}
+    .menu{width: 100%; padding: 15px 5%; font-size: 18px; font-weight: 400;}
+    .sobre{width: 48%; margin-left: 10px;}
+    .sobre h2{padding: 5% 0;}
+    .sobre p{ font-size: 20px;}
+}
+
+/* ----- LARGE DEVICES ----- */
+
+@media screen and (min-width: 1280px){
+    .btn-close{ display: none;}
+    .btn-menu{display: none;}
+
+    .menu{width: 100%;  font-size: 20px; display: block !important; position: static; padding: 0;  font-weight: bold;}
+    .menu ul{width: 100%; float: left; margin-top: 30px;}
+    .menu li:nth-child(1){padding-left: 0px;}
+    .menu li {padding: 0; float:left;}
+    .menu li a{color: white; font-size: 0.9em; padding: 10px; float: left}
+    .menu li a:hover{color: white; transition-duration: 0.8s;}
+    .cabecalho{padding:2% 2% 1% 5%;}
+    .logo a{width:256px; height: 122px;  background: url(../img/Logo-G.png) no-repeat; font-size: 0; margin-left: 38%;} 
+    .sobre{width: 22%; margin-left:2%;}
+    .sobre p{font-size: 22px; padding: 20px}
+    .rodape p { font-size: 18px;}
+}
